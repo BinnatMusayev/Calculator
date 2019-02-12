@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item>-->
+        <!--<layer-list>-->
+            <!--<item> //for round corner-->
+                <!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--android:shape="rectangle">-->
+
+                    <!--<corners android:radius="20dp"/> // if you want clear round shape then make radius size is half of your  button`s height.-->
+                    <!--<solid android:color="#eef7f1f1"/> // Button Colour-->
+                    <!--<padding-->
+                    <!--android:bottom="5dp"-->
+                    <!--android:left="10dp"-->
+                    <!--android:right="10dp"-->
+                    <!--android:top="5dp"/>-->
+
+                <!--</shape>-->
+            <!--</item>-->
+        <!--</layer-list>-->
+    <!--</item>-->
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:left="1dp" android:top="3dp">
+                <shape>
+                    <solid android:color="#e6dedf" />
+                    <corners android:radius="10dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="0dp" android:top="0dp">
+                <shape>
+                    <solid android:color="#9c9595" />
+                    <corners android:radius="10dp"/>
+                </shape>
+            </item>
+            <item android:bottom="3dp" android:right="3dp">
+                <shape>
+                    <solid android:color="#f9f1f2" />
+                    <corners android:radius="10dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

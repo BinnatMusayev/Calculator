@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/calculationText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:fontFamily="@font/orbitron"
+            android:gravity="bottom"
+            android:maxHeight="90dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/zero"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/dark_gray"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="sevenClicked"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="eightClicked"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="nineClicked"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/devideButton"
+            style="@style/operatorButton"
+            android:fontFamily="@font/orbitron"
+            android:onClick="devideClicked"
+            android:text="@string/devide" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/four"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="fourClicked"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="fiveClicked"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="sixClicked"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            style="@style/operatorButton"
+            android:fontFamily="@font/orbitron"
+            android:onClick="multiplyClicked"
+            android:text="@string/multiply" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="oneClicked"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="twoClicked"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/allButtons"
+            android:fontFamily="@font/orbitron"
+            android:onClick="threeClicked"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/minusButton"
+            style="@style/operatorButton"
+            android:fontFamily="@font/orbitron"
+            android:onClick="minusClicked"
+            android:text="@string/minus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/clear"
+                    style="@style/allButtons"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="clearClicked"
+                    android:text="@string/clear" />
+
+                <Button
+                    android:id="@+id/dot"
+                    style="@style/allButtons"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="dotClicked"
+                    android:text="@string/dot" />
+
+                <Button
+                    android:id="@+id/zero"
+                    style="@style/allButtons"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="zeroClicked"
+                    android:text="@string/zero" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/deleteButton"
+                    style="@style/allButtons"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="deleteClicked"
+                    android:text="@string/delete" />
+
+                <Button
+                    android:id="@+id/equal"
+                    style="@style/allButtons"
+                    android:fontFamily="@font/orbitron"
+                    android:onClick="equalClicked"
+                    android:text="@string/equal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/plusButton"
+                style="@style/operatorButton"
+                android:fontFamily="@font/orbitron"
+                android:onClick="plusClicked"
+                android:text="@string/plus" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
