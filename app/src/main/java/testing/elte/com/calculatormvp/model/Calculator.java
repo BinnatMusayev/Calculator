@@ -99,4 +99,13 @@ public class Calculator {
     public void setNewNumber(boolean newNumber) {
         this.newNumber = newNumber;
     }
+
+    public void reinstantiateEverything(){
+        setFirstnum(0);
+        setSecondnum(0);
+        setResult(0);
+        setOperatorEntered(false);
+        setNewNumber(false);
+        setCalculationText("0");
+    }
 }

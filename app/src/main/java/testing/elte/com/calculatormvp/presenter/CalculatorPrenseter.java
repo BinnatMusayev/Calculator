@@ -64,12 +64,7 @@ public class CalculatorPrenseter {
     }
 
     public void clear(){
-        calculator.setFirstnum(0);
-        calculator.setSecondnum(0);
-        calculator.setResult(0);
-        calculator.setOperatorEntered(false);
-        calculator.setNewNumber(false);
-        calculator.setCalculationText("0");
+        calculator.reinstantiateEverything();
         mainView.clearTextView();
     }
 
@@ -78,6 +73,7 @@ public class CalculatorPrenseter {
         calculator.calculate();
         if (calculator.isErrorOccured()){
             mainView.setText("Error");
+            calculator.reinstantiateEverything();
         }else{
             mainView.setText(String.valueOf(calculator.getResult()));
             calculator.setFirstnum(calculator.getResult());
@@ -91,6 +87,7 @@ public class CalculatorPrenseter {
         calculator.calculate();
         if (calculator.isErrorOccured()){
             mainView.setText("Error");
+            calculator.reinstantiateEverything();
         }else{
             mainView.setText(String.valueOf(calculator.getResult()));
             calculator.setFirstnum(calculator.getResult());
